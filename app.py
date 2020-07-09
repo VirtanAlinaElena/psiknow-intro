@@ -151,7 +151,8 @@ def download_all():
         updatedfile_found = False
         for filename in os.listdir(directory):
             path = directory + filename
-            if sha1file(directory+filename) == task.filehash:
+            if sha1file(path) == task.filehash:
+                print("wtf")
                 samefile_found = True
                 break
             if filename == task.content and sha1file(path) != task.filehash:
