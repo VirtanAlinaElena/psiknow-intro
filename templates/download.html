@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Download page</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align:center">Files successfully downloaded</h1>
+
+    <div class="form">
+        <form action="/download" method="GET">
+            <input style="height:50px;width:400px; background-color: #4CAF50; color:white" type="submit" value="Check for updates">
+        </form>
+    </div>
+</div>
+{% endblock %}
